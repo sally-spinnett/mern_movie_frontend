@@ -8,6 +8,7 @@ import Header from "./components/layout/Header";
 import MovieList from './components/pages/MovieList';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+import Homepage from './components/auth/Homepage';
 import UserContext from './context/UserContext';
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
                       <Route exact path="/" component={MovieList}/>
                       <Route path="/login" component={Login}/>
                       <Route path="/register" component={Register}/>
+                      <Route path="/homepage" component={Homepage}/>
                   </Switch>
               </UserContext.Provider>
         </BrowserRouter>
