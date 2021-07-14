@@ -27,6 +27,11 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.test {
+    border: 1px solid whitesmoke;
+    background-color: #4a934a;
+}
+
 /* general styling */
 body {
     font-family: "Roboto", sans-serif;
@@ -143,6 +148,8 @@ body {
     position: relative;
     margin: 1rem;
     width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .movie img {
@@ -179,4 +186,18 @@ body {
 
 .movie:hover .movie-overview {
     transform: translateY(0%);
+}
+
+.movie-mark {
+    background-color: #6aa051;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+
+.space {
+    flex: 1;
 }
